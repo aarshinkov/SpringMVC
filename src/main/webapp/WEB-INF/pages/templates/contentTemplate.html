@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Website</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Atanas Yordanov Arshinkov"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  </head>
+  <body>
+
+    <div th:replace="fragments/mainMenu :: #mainMenu"></div>
+
+    <div class="container">
+      <div layout:fragment="contentDiv">
+        CONTENT OF THE CHOSEN PAGE.
+      </div>
+    </div>
+    
+  </body>
+</html>

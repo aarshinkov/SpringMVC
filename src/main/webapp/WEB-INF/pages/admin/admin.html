@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{templates/contentTemplate}">
+    <head>
+        <title th:text="#{page.admin.title} + ' | ' + #{website.title}">Admin | Website</title>
+    </head>
+    <body>
+        <div th:replace="fragments/mainMenu :: #mainMenu"></div>
+        
+        <div layout:fragment="contentDiv">
+            <p>Admin page</p>
+        </div>
+    </body>
+</html>
